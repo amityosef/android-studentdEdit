@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">assigment2</string>
+    <string name="hello_blank_activity">Hello blank activity</string>
+    <string name="add_student">Add student</string>
+</resources>
