@@ -56,7 +56,7 @@ class EditStudentActivity : AppCompatActivity() {
         }
 
         binding.deleteButton.setOnClickListener {
-            showDeleteConfirmation()
+            deleteStudent()
         }
 
         binding.cancelButton.setOnClickListener {
@@ -120,17 +120,6 @@ class EditStudentActivity : AppCompatActivity() {
                 finishBackToList()
             }
         }
-    }
-
-    private fun showDeleteConfirmation() {
-        AlertDialog.Builder(this)
-            .setTitle("Delete Student")
-            .setMessage("Are you sure you want to delete this student?")
-            .setPositiveButton("Delete") { _, _ ->
-                deleteStudent()
-            }
-            .setNegativeButton("Cancel", null)
-            .show()
     }
 
     private fun deleteStudent() {
